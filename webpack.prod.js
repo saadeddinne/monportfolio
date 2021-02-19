@@ -20,11 +20,7 @@ module.exports = merge(common, {
 			new HtmlWebpackPlugin({
 				template: "./src/resume.html",
 				favicon: "./src/assets/favicon.png",
-				minify: {
-					removeAttributeQuotes: true,
-					collapseWhitespace: true,
-					removeComments: true,
-				},
+				filename: "resume.html",
 			}),
 			new HtmlWebpackPlugin({
 				template: "./src/index.html",
